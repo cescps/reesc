@@ -1,21 +1,48 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100vh;
-  background: #36454F;
+.player-box {
+  height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-canvas {
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
+.icon-wrapper {
+  position: relative;
+}
+
+.triangle-icon svg,
+.pause-icon svg {
+  display: block;
+  width: 20%;
+  height: 20%;
+}
+
+.player-box:hover .triangle-icon {
+  transform: scale(1.1);
+}
+
+.player-box:hover .pause-icon {
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.box-1 .player-box {
+  background-image: url("https://i.pinimg.com/originals/eb/9c/a8/eb9ca8b755820c26fe277ae2959db6c7.gif");
+}
+
+.box-2 .player-box {
+  background-image: url("https://i.pinimg.com/originals/59/b2/34/59b2349684d902730f710b65f05ecb80.gif");
+}
+
+.box-3 .player-box {
+  background-image: url("https://wallpaperaccess.com/full/8278296.gif");
+}
+
+.box-4 .player-box {
+  background-image: url("https://media.tenor.com/_YljgR4MJOkAAAAC/chill.gif");
 }
