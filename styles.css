@@ -1,4 +1,5 @@
 .player-box {
+  position: relative;
   height: 100%;
   display: flex;
   align-items: center;
@@ -6,6 +7,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity as needed */
 }
 
 .icon-wrapper {
@@ -17,6 +28,7 @@
   display: block;
   width: 20%;
   height: 20%;
+  color: white;
 }
 
 .player-box:hover .triangle-icon {
