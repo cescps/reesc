@@ -12,6 +12,9 @@ playerBoxes.forEach(function(playerBox) {
   const songUrl = playerBox.dataset.songUrl;
   audio.src = songUrl;
 
+  // Set the initial volume to 75
+  audio.volume = 0.75;
+
   playerBox.addEventListener('click', function() {
     if (isPlaying) {
       triangleIcon.classList.remove('hidden');
@@ -30,7 +33,7 @@ playerBoxes.forEach(function(playerBox) {
 $("#volume").slider({
   min: 0,
   max: 100,
-  value: 0,
+  value: 75, // Set the initial volume slider value to 75
   range: "min",
   slide: function(event, ui) {
     setVolume(ui.value / 100);
