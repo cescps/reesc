@@ -18,26 +18,26 @@
 
   
   <body>
-  <section class="bg-gray-900 text-white">
+  <section class="bg-gray-900 text-white h-screen">
   <div
     class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
   >
     <div class="mx-auto max-w-lg text-center">
-      <h2 class="text-3xl font-bold sm:text-4xl">ReEsc</h2>
+      <h2 class="text-3xl font-bold sm:text-4xl">Relax with Soothing Music and Calming Sounds</h2>
 
       <p class="mt-4 text-gray-300">
-        Relax. 
+        ReEscape the Chaos.
       </p>
     </div>
     
-    <br> <br>
+    <br> <br> <br> <br>
     
     
     
     
 
 <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8">
-  <div class="h-48 rounded-lg bg-gray-100 relative box-1">
+  <div class="h-48 rounded-lg bg-gray-100 relative box-1 active-box">
     <div class="player-box" data-song-url="https://dl.dropboxusercontent.com/s/2zhkouip4sg63og/asmr.mp3">
       <div class="overlay"></div>
       <div class="icon-wrapper">
@@ -53,7 +53,9 @@
         </div>
       </div>
     </div>
+    <p class="box-description">ASMR</p>
   </div>
+  
   <div class="h-48 rounded-lg bg-gray-100 relative box-2">
     <div class="player-box" data-song-url="https://dl.dropboxusercontent.com/s/68yqvemqz0mvfea/floating.mp3">
       <div class="overlay"></div>
@@ -70,6 +72,7 @@
         </div>
       </div>
     </div>
+    <p class="box-description">Floating</p>
   </div>
   <div class="h-48 rounded-lg bg-gray-100 relative box-3">
     <div class="player-box" data-song-url="https://dl.dropboxusercontent.com/s/0qkh9nqqttqeln6/lofi.mp3">
@@ -87,8 +90,9 @@
         </div>
       </div>
     </div>
+    <p class="box-description">Lofi</p>
   </div>
-  <div class="h-48 rounded-lg bg-gray-100 relative box-4">
+  <div class="h-48 rounded-lg bg-gray-100 relative box-4 active-box">
     <div class="player-box" data-song-url="https://dl.dropboxusercontent.com/s/la63nj76dzp783r/rain.mp3">
       <div class="overlay"></div>
       <div class="icon-wrapper">
@@ -104,17 +108,18 @@
         </div>
       </div>
     </div>
+    <p class="box-description">Piano + Rain</p>
   </div>
 </div>
-
-      <div id="player">
+    
+    <div id="player">
 		<i class="fa fa-volume-down"></i>
 		<div id="volume"></div>
 		<i class="fa fa-volume-up"></i>
 	</div>
-
-	      <br>    <br>    <br>    <br>    <br>
-
+    
+    <br>    <br>    <br>    <br>    <br>
+	  
     <script src="main.js"></script>
 
     
