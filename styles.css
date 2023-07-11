@@ -12,9 +12,6 @@
   .mobile-content {
     display: none; /* Hide mobile content when the screen width is 768px or more */
   }
-  .pc-content {
-    display: block; /* Show PC content when the screen width is 768px or more */
-  }
 }
 
 @media (max-width: 1023px) {
