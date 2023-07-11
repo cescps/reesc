@@ -9,6 +9,12 @@
       }
     }
 
+@media (min-width: 767px) {
+  .mobile-content {
+        display: block; /* Don't show mobile content when the screen width is more than 767px */
+      }
+    }
+
 @media (max-width: 1023px) {
 	.h-48 {
 		margin-top: 15px;
