@@ -9,7 +9,7 @@
       }
     }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .mobile-content {
         display: block; /* Don't show mobile content when the screen width is more than 767px */
       }
