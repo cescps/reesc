@@ -1,3 +1,24 @@
+/* PC Styles */
+    .pc-content {
+      display: none; /* Hide PC content by default */
+    }
+
+    /* Mobile Styles */
+    .mobile-content {
+      display: block; /* Show mobile content by default */
+    }
+
+    /* Media Query for PC */
+    @media (min-width: 768px) {
+      .pc-content {
+        display: block; /* Show PC content when the screen width is 768px or more */
+      }
+
+      .mobile-content {
+        display: none; /* Hide mobile content when the screen width is 768px or more */
+      }
+    }
+
 .player-box {
   position: relative;
   height: 100%;
@@ -10,6 +31,7 @@
   border-radius: 5px;
 }
 
+
 .box-description {
   position: absolute;
   bottom: -25px; /* Adjust the separation distance as needed */
@@ -19,6 +41,8 @@
   color: #999;
   font-size: 14px;
 }
+
+
 
 .overlay {
   position: absolute;
@@ -123,3 +147,7 @@
   	outline: none;
 	}
 } 
+
+   
+
+      
