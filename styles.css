@@ -1,29 +1,27 @@
 /* Media Query for Mobile */
-    @media (max-width: 767px) {
-      .pc-content {
-        display: block; /* Hide PC content when the screen width is 767px or less */
-      }
-
-      .mobile-content {
-        display: none; /* Show mobile content when the screen width is 767px or less */
-      }
-    }
+@media (max-width: 767px) {
+  .pc-content {
+    display: none; /* Hide PC content when the screen width is 767px or less */
+  }
+  .mobile-content {
+    display: block; /* Show mobile content when the screen width is 767px or less */
+  }
+}
 
 @media (min-width: 768px) {
   .mobile-content {
-        display: block; /* Don't show mobile content when the screen width is more than 767px */
-      }
-	 .pc-content {
-        display: none; /* Hide PC content when the screen width is 767px or less */
-      }
-    }
-
-@media (max-width: 1023px) {
-	.h-48 {
-		margin-top: 15px;
-	}
+    display: none; /* Hide mobile content when the screen width is 768px or more */
+  }
+  .pc-content {
+    display: block; /* Show PC content when the screen width is 768px or more */
+  }
 }
 
+@media (max-width: 1023px) {
+  .h-48 {
+    margin-top: 15px;
+  }
+}
 
 
   
