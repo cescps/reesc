@@ -3,9 +3,6 @@
   .pc-content {
     display: none; /* Hide PC content when the screen width is 767px or less */
   }
-  .mobile-content {
-    display: block; /* Show mobile content when the screen width is 767px or less */
-  }
 }
 
 @media (min-width: 768px) {
