@@ -1,153 +1,64 @@
-/* Media Query for Mobile */
-@media (max-width: 767px) {
-  .pc-content {
-    display: none; /* Hide PC content when the screen width is 767px or less */
-  }
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-  .mobile-content {
-    display: none; /* Hide mobile content when the screen width is 768px or more */
-  }
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	background-color: #fffdf6;
+	background-image: linear-gradient(315deg, #fffdf6 0%, #fddac5 74%);
+
 }
 
-@media (max-width: 1023px) {
-  .h-48 {
-    margin-top: 15px;
-  }
+.btn {
+	height: 55px;
+	-webkit-tap-highlight-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:flex-end;
+	cursor: pointer;
 }
 
-
-  
-.player-box {
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
+#front {
+	width: 100px;
+	height: 45px;
+	border-radius: 0 0 6px 6px;
+	background-color: #C8C4B3;
+	transform: perspective(100px) rotateX(35deg);
+	z-index: 0;
+		transition: 100ms;
 }
 
-
-.box-description {
-  position: absolute;
-  bottom: -25px; /* Adjust the separation distance as needed */
-  left: 0;
-  width: 100%;
-  text-align: center;
-  color: #999;
-  font-size: 14px;
+#top {
+	width: 79px;
+	height: 30px;
+	margin-bottom: -14px;
+	border-bottom: 3px solid #EBEAD6;
+	border-radius: 2px 2px 4px 4px;
+	background-color: #E0DBCD;
+	transform: perspective(100px) rotateX(60deg);
+	z-index: 1;
+		transition: 100ms;
 }
 
-
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity as needed */
+#text {
+	font-family: 'Roboto', sans-serif;
+	color: #222;
+	margin-bottom: -26px;
+	transform: perspective(100px) rotateX(60deg);
+	z-index: 2;
 }
 
-.icon-wrapper {
-  position: relative;
+.btn:active #front{
+	height: 35px;
+	border-radius: 0 0 2px 2px;
 }
 
-.triangle-icon svg,
-.pause-icon svg {
-  display: block;
-  width: 20%;
-  height: 20%;
-  color: white;
+.btn:active #top {
+	width: 83px;
 }
-
-.player-box:hover .triangle-icon {
-  transform: scale(1.1);
-}
-
-.player-box:hover .pause-icon {
-  transform: scale(1.1);
-}
-
-.hidden {
-  display: none;
-}
-
-.box-1 .player-box {
-  background-image: url("https://i.pinimg.com/originals/eb/9c/a8/eb9ca8b755820c26fe277ae2959db6c7.gif");
-}
-
-.box-2 .player-box {
-  background-image: url("https://i.pinimg.com/originals/bf/fe/de/bffede1d81ebe6ddb2eb3033dc86ac68.gif");
-}
-
-.box-3 .player-box {
-  background-image: url("https://gifdb.com/images/featured/vaporwave-mxa15mtookmrjlyk.gif");
-}
-
-.box-4 .player-box {
-  background-image: url("https://i.pinimg.com/originals/f3/e0/a5/f3e0a5eb29a20721639973c480793e8a.gif");
-}
-
-#player {
-	width: 350px;
-	height: 50px;
-	position: relative;
-	margin: 0 auto;
-	top: 80px;
-	
-	i {
-		position: absolute;
-		margin-top: -6px;
-		color: #666;
-	}
-	
-	i.fa-volume-down {
-		margin-left: -8px;
-	}
-	
-	i.fa-volume-up {
-		margin-right: -8px;
-		right: 0;
-	}
-}
-
-#volume {
-	position: absolute;
-	left: 24px;
-	margin: 0 auto;
-	height: 5px;
-	width: 300px;
-	background: #555;
-	border-radius: 15px;
-	
-	.ui-slider-range-min {
-		height: 5px;
-		width: 300px;
-		position: absolute;
-    background: #228B22;
-		border: none;
-		border-radius: 10px;
-  	outline: none;
-	}
-	
-	.ui-slider-handle {
-		width: 20px;
-  	height: 20px;
-		border-radius: 20px;
-  	background: #FFF;
-  	position: absolute;
-  	margin-left: -8px;
-  	margin-top: -8px;
-  	cursor: pointer;
-  	outline: none;
-	}
-} 
-
-   
-
-      
