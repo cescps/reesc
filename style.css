@@ -1,0 +1,126 @@
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.input {
+    --input-focus: #2d8cf0;
+    --font-color: #fefefe;
+    --font-color-sub: #7e7e7e;
+    --bg-color: #111111;
+    --main-color: #fefefe;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+#main-content {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 90%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+#timer,
+#habits,
+#schedule,
+#tasks,
+#reward,
+#sounds,
+#dragdrop {
+    margin: 20px;
+}
+
+.sound-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task-column {
+    background-color: #444;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    min-height: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.task {
+    background-color: #555;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.draggable {
+    cursor: grab;
+}
+
+.dropzone {
+    background-color: #666;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.calendar {
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.current-time-bar {
+    position: absolute;
+    height: 2px;
+    background-color: red;
+    width: 100%;
+    top: 50%;
+}
+
+.tree {
+    background-color: #444;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
