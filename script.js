@@ -1,13 +1,3 @@
-function checkPassword() {
-    const password = document.getElementById('password').value;
-    if (password === 'cescpinyol') { 
-        document.getElementById('login').style.display = 'none';
-        document.getElementById('main-content').style.display = 'block';
-    } else {
-        alert('Incorrect password');
-    }
-}
-
 // Timer script
 let timer;
 let timerRunning = false;
@@ -96,6 +86,16 @@ function updateTree() {
     const doneTasks = document.getElementById('done').children.length;
     document.getElementById('task-counter').innerText = `Completed Tasks: ${doneTasks}`;
     document.getElementById('tree-image').src = `https://via.placeholder.com/100x150?text=${doneTasks}`;
+}
+
+function checkPassword() {
+    const password = document.getElementById('password').value;
+    if (password === 'cescpinyol') { 
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    } else {
+        alert('Incorrect password');
+    }
 }
 
 // Schedule script
